@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/2393036_law_note_scroll_terms_document_icon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <video autoplay loop muted src="/img/4k.mp4" class="videoK"></video>
+    </div>
+
+    <h1 class="titulo">Encriptador</h1>
+
+    <img src="/img/encriptado.jpg" alt="letra/text" class="logo" />
+
+    <textarea
+      name="texto"
+      id="mensajeUsuario"
+      cols="60"
+      rows="20"
+      placeholder="Escribe aquí..."
+      class="textArea_1"
+    ></textarea>
+
+    <div class="textoEncriptados">
+      <h2 class="espacio"></h2>
+    </div>
+    
+    <textarea
+      name="mostrarTexto"
+      id="textoEncriptado"
+      cols="29"
+      rows="21"
+      class="textArea_2"
+      readonly
+    ></textarea>
+
+    <button class="copia shadow-drop_1" onclick="copiarTexto()">Copiar!</button>
+    <h1 class="aviso_1">! Solo letras minúsculas y sin acentos</h1>
+    <button onclick="encriptarTexto()" class="boton_1 shadow-drop_1">
+      Encriptar!
+    </button>
+    <button
+      type="reset"
+      onclick="desencriptarTexto()"
+      class="boton_2 shadow-drop_1"
+    >
+      Desencriptar!
+  </button>
+    <button onclick="pegarTexto()" class="boton_3 shadow-drop_1">Pegar!</button>
+
+    <script src="/emcriptador.js"></script>
+  </body>
+</html>
